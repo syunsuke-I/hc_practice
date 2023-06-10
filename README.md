@@ -1,2 +1,1 @@
-# hc_practice
-hc_practice
+課題提出用のリポジトリです
