@@ -1,0 +1,677 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0fe6869c45.js" crossorigin="anonymous"></script>
+    <title>Zennの2種類の執筆方法について</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-contents">
+            <div class="header-contents-title">
+                <!---svgは丸々コピーしました-->
+                <svg x="0px" y="0px" viewBox="0 0 377.4 88.3" aria-label="Zenn | エンジニアのための情報共有コミュニティ" height="22"><title>Zenn</title><g fill="#111"><path d="M233,56.8h-39c0.5,3.5,2.2,6.8,4.8,9.2c2.7,2.3,6.2,3.5,9.8,3.4c2.8,0,5.6-0.5,8.2-1.7c2.5-1.1,4.8-2.8,6.5-5l8.2,9.5 c-2.5,3.4-5.7,6.1-9.5,7.9c-4.6,2.2-9.6,3.3-14.7,3.2c-5.7,0.1-11.4-1.2-16.5-4c-4.5-2.5-8.2-6.3-10.7-10.9s-3.8-9.8-3.7-15.1v-2.2 c-0.1-5.7,1.1-11.3,3.5-16.5c2.2-4.7,5.7-8.6,10.1-11.3c4.7-2.8,10.1-4.2,15.5-4.1c5.2-0.1,10.3,1.1,14.9,3.7 c4.1,2.5,7.4,6.2,9.4,10.5c2.2,5.1,3.3,10.5,3.2,16.1V56.8z M216.1,43.9c0.1-2.9-0.9-5.7-2.8-7.9c-1.8-1.9-4.4-2.9-7.9-2.9 c-2.9-0.1-5.8,1.1-7.7,3.2c-2,2.6-3.3,5.7-3.6,9h22V43.9z"></path><path d="M128.3,67.9h36.1v14.7h-56.9V72l35.8-54.3h-36.2V2.9h56.6v10.4L128.3,67.9z"></path><path d="M248.8,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1s-12.4,5.5-12.4,16.1 v30.7h-15.8L248.8,50.7L248.8,50.7z"></path><path d="M320.3,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1S336,40.8,336,51.4v30.7 h-15.8L320.3,50.7L320.3,50.7z"></path></g><path fill="#3EA8FF" class="st0" d="M2.4,83.3h17c0.9,0,1.7-0.5,2.2-1.2L68.4,5.2C69,4.2,68.3,3,67.1,3H51c-0.8,0-1.5,0.4-1.9,1.1L1.6,81.9 C1.3,82.5,1.7,83.3,2.4,83.3z"></path><path fill="#3EA8FF" class="st0" d="M61,82.1l22.1-35.5c0.7-1.1-0.1-2.5-1.4-2.5H65.7c-0.6,0-1.2,0.3-1.5,0.8L41.5,81.2c-0.6,0.9,0.1,2.1,1.2,2.1 h16.3C59.8,83.3,60.6,82.9,61,82.1z"></path></svg>
+            </div>
+            <div class="header-contents-right">          
+                <div class="header-contents-alert-icon">
+                    <!---svgは丸々コピーしました-->
+                    <svg class="header-contents-alert-icon-svg" viewBox="0 0 27 27" height="23" width="23"><path d="M11.56,3.43a8.26,8.26,0,0,0,0,16.52,8.18,8.18,0,0,0,5-1.72l4.7,4.7a1.1,1.1,0,0,0,1.56,0,1.09,1.09,0,0,0,0-1.55l0,0-4.7-4.7a8.18,8.18,0,0,0,1.72-5A8.28,8.28,0,0,0,11.56,3.43Zm0,2.2A6.06,6.06,0,1,1,5.5,11.69,6,6,0,0,1,11.56,5.63Z" fill="currentColor"></path></svg>
+                </div>
+                <div class="header-contents-serch-icon">
+                    <!---svgは丸々コピーしました-->
+                    <svg class="header-contents-serch-icon-svg" viewBox="0 0 27 27" height="23" width="23"><path fill="currentColor" d="M23.7,18.3a4.79,4.79,0,0,1-2-4V11.2a8.2,8.2,0,0,0-16.4,0v3.1a5.21,5.21,0,0,1-2.1,4.1,1.09,1.09,0,0,0-.4,1.3,1.17,1.17,0,0,0,1.1.8H9.1a4.5,4.5,0,0,0,4.4,3.7,4.42,4.42,0,0,0,4.4-3.7h5.2a1.22,1.22,0,0,0,1.2-1.2A1.1,1.1,0,0,0,23.7,18.3ZM13.5,22.18a2.5,2.5,0,0,1-2.29-1.78h4.58A2.36,2.36,0,0,1,13.5,22.18ZM6.21,18.46a7.72,7.72,0,0,0,1.15-4.07V11.16A6.16,6.16,0,0,1,13.51,5a6.22,6.22,0,0,1,6.15,6.15v3.23a8,8,0,0,0,1.15,4.07Z"></path></svg>
+                </div>                      
+                <div class="header-contents-profile-icon">
+                    <img src="https://lh3.googleusercontent.com/a-/AOh14GhXBiY5q6xk8zhcx9nZPCar9TTNOb7Td9UWDK4V=s96-c">
+                </div> 
+                <div class="header-contents-login-btn">
+                    <button>投稿する</button>
+                </div>               
+            </div>
+        </div>
+        <hr size="0.2px" color="#e4edf4" width="100%">
+        <div class="responsive-header">
+            <div class="header-info-responsive-left">
+                <div class="artical-org-info-img-responsive">
+                    <img src="https://storage.googleapis.com/zenn-user-upload/avatar/9965dabc76.jpeg"/">
+                </div>
+                <div class="one-right-responsive">
+                    <a href="https://zenn.dev/zenn">Zenn公式</a>
+                </div>
+            </div>
+            <div class="header-info-responsive-right">
+                <div class="header-info-responsive-right-index">
+                    目次
+                    <svg viewBox="0 0 27 27" class="ArticleMobileHeaderToc_arrowIcon__QZnYp" height="13" width="13"><path fill="currentColor" d="M12.74,20.53,3.48,11.35a.75.75,0,0,1,0-1.07L4.71,9.05a.75.75,0,0,1,1.07,0l7.49,7.41,7.49-7.41a.74.74,0,0,1,1.06,0l1.24,1.23a.77.77,0,0,1,0,1.07L13.8,20.53A.74.74,0,0,1,12.74,20.53Z"></path></svg>
+                </div>
+                <div class="header-info-responsive-good-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main-block">
+            <div class="top-contens">
+                <div class="top-contens-img">
+                    <img src="https://asia-northeast1-zenn-dev-production.cloudfunctions.net/twemoji/📝.svg"/>
+                </div>
+                <div class="top-contens-title">
+                    <h1>Zennの2種類の執筆方法について</h1>
+                </div>
+                <div class="res-contents-info">2020/09/06に公開・約1,200字</div>
+            </div>
+            <div class="article-contents">
+                <div class="left-nav">
+                    <div class="left-nav-good-icon">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="good-amount">61</div>
+                    </div>
+                    <div class="left-nav-tweet-icon">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                        <div class="tweet">ツイート</div>
+                    </div>
+                </div>            
+                <div class="main-contants">
+                    <div class="main-contants-container">
+                        <div class="tags">
+                            <div class="tag1">
+                                <img class = "tag1-icon" src="https://storage.googleapis.com/zenn-user-upload/topics/b52eac9e48.png">
+                                <div class="tag1-name">Zenn</div>
+                            </div>
+                            <div class="tag2">
+                                <img class="tag2-icon" loading="lazy" src="https://zenn.dev/images/drawing/tech-icon.svg">
+                                <div class="tag2-name">Tech</div>
+                            </div>
+                        </div>
+                        <div class="intro">このページではZennで記事や本を作成するときの執筆環境について紹介します。</div>
+                        <div class="chapter">
+                            <div class="chapter-title">
+                                <h2>Zenn の執筆方法は 2 種類</h2>
+                            </div>
+                            <div class="chapter1-contents">
+                                <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+                                <h3>1. Webエディター</h3>
+                                <img class="chapter-img img-1" src="https://storage.googleapis.com/zenn-user-upload/tb04ri7f5v9mdccsehi5jppvfpm3">
+                                <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+                                <div class="details">
+                                    <details>
+                                        <summary>ショートカットを使用しよう</summary>
+                                        <div class="details-contents">
+                                            <p class="title">オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+                                            <p class="indent"><span>・Ctrl + P（プレビュー）：</span>>markdownがどのように表示されるかをチェックできます。もう一度ショートカットを実行すると、エディターに戻ります。</p>
+                                            <p class="indent"><span>・Ctrl + S（内容の保存）：</span>変更内容を保存します。</p>
+                                            <p class="indent"><span>・Ctrl + I（埋め込み）：</span>ツイートや YouTube、CodePen、SpeakerDeck などの埋め込みコンテンツを挿入するためのモーダルが表示されます。</p>
+                                            <p class="komejirusi">※ Mac の場合は<span>Ctrl</span>の代わりに<span>⌘キー</span>を使用します。</p>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="chapter2-contents">
+                                <h3>2. ローカルのテキストエディター + CLI</h3>
+                                <img class="chapter-img img-2" src="https://storage.googleapis.com/zenn-user-upload/n0tufad6ruthuy0j2hxhffg87hpz">
+                                <img class="chapter-img img-3" src="https://storage.googleapis.com/zenn-user-upload/ve1rve2rb3yvvcat974fxt2rftc1">
+                                <p>自分の好きな環境で執筆したい方はGitHub リポジトリとの連携機能を利用することをおすすめします。リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。</p>
+                                <a href="">📘 Zenn と GitHub リポジトリを連携する →</a>
+                                <p>リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。</p>
+                                <a href=""> 📘 Zenn CLI を導入する →</a>
+                                <hr size="0.2px" color="#e4edf4" width="680px">
+                                <p>オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。</p>
+                                <a href=""> 📘 Zenn のmarkdown記法 →</a>
+                                <div class="edit-req-btn">
+                                    <button><i class="fa-brands fa-github"></i>GitHubで編集を提案</button>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav-good-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="footer-nav-good-amount">61</div>
+                        </div>
+                        <svg viewBox="0 0 27 27" aria-label="その他の操作" height="17" width="17" class="v-svg"><path fill="currentColor" d="M12.74,20.53,3.48,11.35a.75.75,0,0,1,0-1.07L4.71,9.05a.75.75,0,0,1,1.07,0l7.49,7.41,7.49-7.41a.74.74,0,0,1,1.06,0l1.24,1.23a.77.77,0,0,1,0,1.07L13.8,20.53A.74.74,0,0,1,12.74,20.53Z"></path></svg>
+                        <div class="footer-nav-tweet-icon">
+                            <div class="fa-brands fa-twitter fa-lg tweet-icon-footer"></div>
+                            <div class="footer-nav-tweet">ツイート</div>
+                        </div>
+                    </div>
+                    <hr size="0.2px" color="#e4edf4" width="680px" margin-top="130px">
+                    <div class="footer-org-info">
+                        <div class="artical-org-info-main">
+                            <div class="footer-artical-org-info-img">
+                                <img src="https://storage.googleapis.com/zenn-user-upload/avatar/9965dabc76.jpeg"/">
+                            </div>
+                            <div class="footer-artical-org-infos">
+                                <div class="footer-artical-org-name">
+                                    <a href="https://zenn.dev/zenn">Zenn公式</a>
+                                    <div class="footer-artical-org-info-sentence">
+                                        Zennの使い方や開発状況を発信する公式アカウントです。
+                                    </div>
+                                </div>
+                                <div class="footer-artical-org-icons">
+                                    <button>フォロー</button>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-brands fa-twitter  fa-2xl"></i>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <div class="right-nav artical-info">
+                        <div class="artical-info-section one-of-four">
+                            <div class="one-left">
+                                <i class="fa-solid fa-user"></i>
+                                著者
+                            </div>
+                            <div class="one-right">
+                                <a href="https://zenn.dev/zenn">Zenn公式</a>
+                            </div>
+                        </div>
+                        <div class="artical-info-section two-of-four">
+                            <div class="two-left">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                公開
+                            </div>
+                            <div class="two-right">
+                                2020/09/06
+                            </div>                            
+                        </div>
+                        <div class="artical-info-section three-of-four">
+                            <div class="three-left">
+                                <i class="fa-solid fa-rotate"></i>
+                                本文更新
+                            </div>
+                            <div class="three-right">
+                                <i class="fa-brands fa-github"></i>
+                                2021/09/09
+                            </div>
+                        </div>
+                        <div class="artical-info-section four-of-four">
+                            <div class="four-left">
+                                <i class="fa-regular fa-file"></i>
+                                文章量
+                            </div>
+                            <div class="four-right">
+                                約1,200字
+                            </div>                            
+                        </div>                                                                                                                                          
+                    </div> 
+                    <div class="right-nav artical-org-info">
+                        <div class="artical-org-info-main">
+                            <div class="artical-org-info-img">
+                                <img src="https://storage.googleapis.com/zenn-user-upload/avatar/9965dabc76.jpeg"/">
+                            </div>
+                            <div class="artical-org-infos">
+                                <div class="artical-org-name">
+                                    <a href="https://zenn.dev/zenn">Zenn公式</a>
+                                </div>
+                                <div class="artical-org-icons">
+                                    <button>フォロー</button>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-brands fa-twitter org-twitter fa-2xl"></i>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="artical-org-info-sentence">
+                            Zennの使い方や開発状況を発信する公式アカウントです。
+                        </div>
+                    </div>
+                    <div class="right-nav artical-index">
+                        <div class="artical-index-title">
+                            目次
+                        </div>
+                        <div class="artical-index-contents">
+                            <div class="artical-index-marker-line">
+                                <div class="artical-index-line">
+                                    <div class="artical-index-marker-fixed">
+                                        ⚫︎
+                                    </div>                                    
+                                    <div class="artical-index-marker" id="marker">
+                                        ⚫︎
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="artical-index-header-contens">
+                                <div class="artical-index-header">
+                                    Zenn の執筆方法は 2 種類
+                                </div>
+                                <div class="artical-index-sections">
+                                    <div class="artical-index-section one-row">
+                                        1. Webエディター
+                                    </div>
+                                    <div class="artical-index-section two-row">
+                                        2. ローカルのテキストエディター + CLI
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>  
+            </div>                  
+            <div class="discussion-contents-container">
+                <div class ="discussion-content-main-display">
+                    <h2 font-weight="bold">Discussion</h2>
+                    <img src="https://zenn.dev/images/drawing/discussion.png">
+                </div>
+                <hr size="0.2px" color="#e4edf4">
+                <div class="discussion-content-comment">
+                    <div class="discussion-content-left">
+                        <div>
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14GhXBiY5q6xk8zhcx9nZPCar9TTNOb7Td9UWDK4V=s96-c">
+                        </div>
+                        <div class="change-tab-md-pv">
+                            <div class="tab-md">Markdown</div>
+                            <div class="tab-pv">Preview</div>
+                        </div>
+                    </div>
+                    <div class="goto-md-guide">
+                        <a href="#">Markdownガイド</a><span>→</span>
+                    </div>
+                </div>
+                <div>
+                    <textarea class="comment-textarea" placeholder="記事についてコメントする"></textarea>
+                </div>
+                <hr size="0.2px" color="#e4edf4" width="680px">
+                <div class="post-btn">
+                    <div class="post-btn-left">
+                        <div>
+                            <svg class="post-btn-left-svg" x="0px" y="0px" viewBox="0 0 27 27" xml:space="preserve" height="25" width="25"><g><path fill="currentColor" d="M21,5.5H6c-1.2,0-2.1,1-2.1,2.1v12.2C3.9,21,4.8,22,6,22h15c1.2,0,2.2-1,2.2-2.2V7.6C23.2,6.4,22.2,5.5,21,5.5z M5.4,18.6 l4.7-5.2c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0.1,0,0.1,0l6.6,6.9H6c-0.3,0-0.6-0.2-0.6-0.5V18.6z M21.5,17.1l-4-4.2 c-0.2-0.2-0.4-0.3-0.6-0.3c0,0,0,0,0,0c-0.2,0-0.5,0.1-0.6,0.3l-2.1,2.3l-3.4-3.6c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3 l-4,4.5V7.6C5.4,7.3,5.7,7,6,7h15c0.3,0,0.5,0.2,0.5,0.6V17.1z M16.7,14.9c0-0.1,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2,0.1l4.4,4.6v0.3 c0,0.3-0.2,0.5-0.5,0.5h-1.8l-3.8-4L16.7,14.9z"></path><path fill="currentColor" d="M17.6,8.1c-0.7,0-1.5,0.6-1.5,1.6c0,0.7,0.6,1.5,1.5,1.5c0.7,0,1.6-0.6,1.5-1.6C19,8.8,18.4,8.1,17.6,8.1z"></path></g></svg>
+                        </div>
+                        <div class="post-btn-left-svg">
+                            <svg class="post-btn-left-svg-main" x="0px" y="0px" viewBox="0 0 27 27" xml:space="preserve" height="16" width="16"><path fill="currentColor" d="M23.6,12.2h-8c-0.1,0-0.1,0-0.1-0.1v-8c0-0.9-0.7-1.5-1.6-1.5c-0.9,0-1.5,0.7-1.5,1.5v8c0,0.1,0,0.1-0.1,0.1h-8 c-0.9,0-1.6,0.7-1.6,1.5s0.7,1.6,1.6,1.6h8c0.1,0,0.1,0,0.1,0.1v8c0,0.9,0.7,1.6,1.5,1.6c0.9,0,1.6-0.7,1.6-1.6v-8 c0-0.1,0-0.1,0.1-0.1h8c0.9,0,1.6-0.7,1.6-1.6S24.5,12.2,23.6,12.2z"></path></svg><span class="post-btn-left-svg">埋め込み</span>    
+                        </div>
+                    </div>
+                    <div class="post-btn-right"> 
+                        <div class="post-btn-main">
+                            <button>投稿する</button>
+                        </div>  
+                    </div>
+                </div>
+                <!-- infoマークを挿入 -->
+                <div class="info">
+                    <i class="fa fa-info-circle"></i>
+                    <a href="https://zenn.dev/guideline"><span class="com-text-deco">コミュニティガイドライン</span>に則った投稿をしましょう。</a>
+                </div>
+            </div>
+            <div class="read-next-contants">
+                <h2>Read next</h2>
+                <div class="read-next-content-wrapper">
+                    <div class="read-next-content-left">
+                        <!-- 左の1個目 -->
+                        <div class="read-next-content left-1">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🔖</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        Zennとdiff記法について
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="kkiyama117" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/a-/AOh14GgUc0zdEj2qt8HgF-K-swsSBfyZHBeW37xMmRzflZI=s80-c" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">kkiyama117</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2021/01/28
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                55
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左の2個目 -->
+                        <div class="read-next-content left-2">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">📚</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="serima" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--GBMEzjP9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/7a2cacc0df.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">serima</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2020/09/29
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                158
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左の3個目 -->
+                        <div class="read-next-content left-3">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">👩‍💻</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する
+                                    </div>
+                                    <div class="read-next-artical-info-nest">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="Zenn Tech Blog" class="UserInPublicationAvatar_pubImg__G5_3y" src="https://res.cloudinary.com/zenn/image/fetch/s--UHtgact1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_50/https://storage.googleapis.com/zenn-user-upload/avatar/6399678e6b.jpeg">
+                                        </div>
+                                        <div class="read-next-artical-info-id-date-good">
+                                            <div class="read-next-author-id">
+                                                <a href="https://zenn.dev/kkiyama117">waddy_u in Zenn Tech Blog</a>
+                                            </div>
+                                            <div class="read-next-artical-info-date-good">
+                                                <div class="read-next-create-date">
+                                                    2021/05/28
+                                                </div>
+                                                <div class="read-next-good">
+                                                    <div class="read-next-good-img">
+                                                        <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                                    </div>
+                                                    <div class="read-next-good-amaount">
+                                                        162
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左の4個目 -->
+                        <div class="read-next-content left-4">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🧜‍♀️</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        Zennが mermaid.js によるダイアグラム表記に対応したので試す
+                                    </div>
+                                    <div class="read-next-artical-info-nest">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="Zenn Tech Blog" class="UserInPublicationAvatar_pubImg__G5_3y" src="https://res.cloudinary.com/zenn/image/fetch/s--UHtgact1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_50/https://storage.googleapis.com/zenn-user-upload/avatar/6399678e6b.jpeg">
+                                        </div>
+                                        <div class="read-next-artical-info-id-date-good">
+                                            <div class="read-next-author-id">
+                                                <a href="https://zenn.dev/kkiyama117">waddy_u in Zenn Tech Blog</a>
+                                            </div>
+                                            <div class="read-next-artical-info-date-good">
+                                                <div class="read-next-create-date">
+                                                    2021/06/08
+                                                </div>
+                                                <div class="read-next-good">
+                                                    <div class="read-next-good-img">
+                                                        <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                                    </div>
+                                                    <div class="read-next-good-amaount">
+                                                        64
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左の5個目 -->
+                        <div class="read-next-content left-5">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">📝</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        4ステップでGithubからZennに記事を公開してみる(トラブルシューティング付き)
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="オオバ@ohbashunsuke" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--k8X42fvO--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/2fdbf43e75.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/ohbashunsuke">オオバ@ohbashunsuke</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2020/09/17
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                48
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="read-next-content-right right-1">
+                        <!-- 右の1個目 -->
+                        <div class="read-next-content">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🐀</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        GitHub ActionsでZennブログの校正を自動化してみた
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="ユータ" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--oqInPIWd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/fb4d583c3c.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">ユータ</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2021/03/27
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                77
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右の2個目 -->
+                        <div class="read-next-content right-2">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🌟</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="koki" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://lh3.googleusercontent.com/a-/AOh14Ghb4YGzhOmUME8kf5ygMCjAh9k1xKBO4KugU0LCAg=s96-c" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">koki</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2022/10/01
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                180
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右の3個目 -->
+                        <div class="read-next-content right-3">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🍜</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        3分できる即席GitHubプロフィール
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="t_keshi" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--dNZtjoR_--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/0614c6d47f.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">t_keshi</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2022/09/03
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                243
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右の4個目 -->
+                        <div class="read-next-content right-4">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🍣</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        ZennのバッジをFastAPI+Vercelでお手軽に作る
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="ganyariya" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--dcXaEobl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/36164a7e66.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">ganyariya</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            2021/01/13
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右の5個目 -->
+                        <div class="read-next-content right-5">
+                            <div class="read-next-content-main">
+                                <div class="read-next-left-contents">
+                                    <div class="left-contents-img">🚀</div>
+                                </div>
+                                <div class="read-next-right-contents">
+                                    <div class="content-title">
+                                        Zenn の VSCode Web 拡張にプルリクエストしてみた
+                                    </div>
+                                    <div class="read-next-artical-info">
+                                        <div class="read-next-author-prof-img">
+                                            <img alt="PADAone🐕" class="AvatarImage_plain__BCJNs " height="26" loading="lazy" referrerpolicy="no-referrer" src="https://res.cloudinary.com/zenn/image/fetch/s--XVoj6cOU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_70/https://storage.googleapis.com/zenn-user-upload/avatar/7f05673c72.jpeg" width="26">
+                                        </div>
+                                        <div class="read-next-author-id">
+                                            <a href="https://zenn.dev/kkiyama117">PADAone🐕</a>
+                                        </div>
+                                        <div class="read-next-create-date">
+                                            4ヶ月前
+                                        </div>
+                                        <div class="read-next-good">
+                                            <div class="read-next-good-img">
+                                                <svg x="0px" y="0px" viewBox="0 0 110 110" xml:space="preserve" aria-label="いいねされた数" height="14" width="14"><path fill="currentColor" d="M77.5,12.2c-7.3,0-14.4,2.8-19.8,7.7c-1.5,1.3-3.7,1.3-5.2,0c-5.4-5-12.5-7.7-19.9-7.7C17.3,12.2,5,24.5,5,39.7 c0,20.8,24.5,41,31.4,47.4c3.5,3.3,7.7,7,11.1,10.2c4.2,3.8,10.6,3.8,14.9,0c3.5-3.1,7.6-6.8,11.1-10.2c6.9-6.4,31.4-26.6,31.4-47.4 C105,24.5,92.7,12.2,77.5,12.2z M69.1,77.6c-0.9,0.8-1.6,1.5-2.3,2.1c-3.1,2.9-6.7,6.2-9.9,9.1c-1.1,1-2.7,1-3.7,0 c-3.1-2.9-6.7-6.1-9.9-9.1c-0.6-0.6-1.4-1.2-2.3-2.1C33.9,71.2,15,54.2,15,39.7c0-9.7,7.8-17.5,17.5-17.5c5.5,0.1,10.8,2.4,14.6,6.5 l5.9,6.2c1,1.1,2.8,1.2,3.9,0.2c0.1,0,0.1-0.1,0.2-0.2l5.9-6.2c3.7-4.1,9-6.5,14.6-6.5C87.1,22.2,95,30,95,39.7 C95,54.2,76.1,71.2,69.1,77.6z"></path></svg>
+                                            </div>
+                                            <div class="read-next-good-amaount">
+                                                28
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="zenn-responsive">
+            <svg x="0px" y="0px" viewBox="0 0 377.4 88.3" aria-label="Zenn | エンジニアのための情報共有コミュニティ" height="22"><title>Zenn</title><g fill="#111"><path d="M233,56.8h-39c0.5,3.5,2.2,6.8,4.8,9.2c2.7,2.3,6.2,3.5,9.8,3.4c2.8,0,5.6-0.5,8.2-1.7c2.5-1.1,4.8-2.8,6.5-5l8.2,9.5 c-2.5,3.4-5.7,6.1-9.5,7.9c-4.6,2.2-9.6,3.3-14.7,3.2c-5.7,0.1-11.4-1.2-16.5-4c-4.5-2.5-8.2-6.3-10.7-10.9s-3.8-9.8-3.7-15.1v-2.2 c-0.1-5.7,1.1-11.3,3.5-16.5c2.2-4.7,5.7-8.6,10.1-11.3c4.7-2.8,10.1-4.2,15.5-4.1c5.2-0.1,10.3,1.1,14.9,3.7 c4.1,2.5,7.4,6.2,9.4,10.5c2.2,5.1,3.3,10.5,3.2,16.1V56.8z M216.1,43.9c0.1-2.9-0.9-5.7-2.8-7.9c-1.8-1.9-4.4-2.9-7.9-2.9 c-2.9-0.1-5.8,1.1-7.7,3.2c-2,2.6-3.3,5.7-3.6,9h22V43.9z"></path><path d="M128.3,67.9h36.1v14.7h-56.9V72l35.8-54.3h-36.2V2.9h56.6v10.4L128.3,67.9z"></path><path d="M248.8,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1s-12.4,5.5-12.4,16.1 v30.7h-15.8L248.8,50.7L248.8,50.7z"></path><path d="M320.3,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1S336,40.8,336,51.4v30.7 h-15.8L320.3,50.7L320.3,50.7z"></path></g><path fill="#3EA8FF" class="st0" d="M2.4,83.3h17c0.9,0,1.7-0.5,2.2-1.2L68.4,5.2C69,4.2,68.3,3,67.1,3H51c-0.8,0-1.5,0.4-1.9,1.1L1.6,81.9 C1.3,82.5,1.7,83.3,2.4,83.3z"></path><path fill="#3EA8FF" class="st0" d="M61,82.1l22.1-35.5c0.7-1.1-0.1-2.5-1.4-2.5H65.7c-0.6,0-1.2,0.3-1.5,0.8L41.5,81.2c-0.6,0.9,0.1,2.1,1.2,2.1 h16.3C59.8,83.3,60.6,82.9,61,82.1z"></path></svg>
+            <div class="zenn-context">エンジニアのための情報共有コミュニティ</div>
+        </div>
+        <div class="footer">
+            <div class="zenn">
+                <svg x="0px" y="0px" viewBox="0 0 377.4 88.3" aria-label="Zenn | エンジニアのための情報共有コミュニティ" height="22"><title>Zenn</title><g fill="#111"><path d="M233,56.8h-39c0.5,3.5,2.2,6.8,4.8,9.2c2.7,2.3,6.2,3.5,9.8,3.4c2.8,0,5.6-0.5,8.2-1.7c2.5-1.1,4.8-2.8,6.5-5l8.2,9.5 c-2.5,3.4-5.7,6.1-9.5,7.9c-4.6,2.2-9.6,3.3-14.7,3.2c-5.7,0.1-11.4-1.2-16.5-4c-4.5-2.5-8.2-6.3-10.7-10.9s-3.8-9.8-3.7-15.1v-2.2 c-0.1-5.7,1.1-11.3,3.5-16.5c2.2-4.7,5.7-8.6,10.1-11.3c4.7-2.8,10.1-4.2,15.5-4.1c5.2-0.1,10.3,1.1,14.9,3.7 c4.1,2.5,7.4,6.2,9.4,10.5c2.2,5.1,3.3,10.5,3.2,16.1V56.8z M216.1,43.9c0.1-2.9-0.9-5.7-2.8-7.9c-1.8-1.9-4.4-2.9-7.9-2.9 c-2.9-0.1-5.8,1.1-7.7,3.2c-2,2.6-3.3,5.7-3.6,9h22V43.9z"></path><path d="M128.3,67.9h36.1v14.7h-56.9V72l35.8-54.3h-36.2V2.9h56.6v10.4L128.3,67.9z"></path><path d="M248.8,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1s-12.4,5.5-12.4,16.1 v30.7h-15.8L248.8,50.7L248.8,50.7z"></path><path d="M320.3,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1S336,40.8,336,51.4v30.7 h-15.8L320.3,50.7L320.3,50.7z"></path></g><path fill="#3EA8FF" class="st0" d="M2.4,83.3h17c0.9,0,1.7-0.5,2.2-1.2L68.4,5.2C69,4.2,68.3,3,67.1,3H51c-0.8,0-1.5,0.4-1.9,1.1L1.6,81.9 C1.3,82.5,1.7,83.3,2.4,83.3z"></path><path fill="#3EA8FF" class="st0" d="M61,82.1l22.1-35.5c0.7-1.1-0.1-2.5-1.4-2.5H65.7c-0.6,0-1.2,0.3-1.5,0.8L41.5,81.2c-0.6,0.9,0.1,2.1,1.2,2.1 h16.3C59.8,83.3,60.6,82.9,61,82.1z"></path></svg>
+                <div class="zenn-context">エンジニアのための<br>情報共有コミュニティ</div>
+            </div>
+            <div class="about">
+                <h4>About</h4>
+                <div><a href="https://zenn.dev/about">Zennについて</a></div>
+                <div><a href="https://classmethod.jp/">運営会社</a></div>
+                <div><a href="https://info.zenn.dev/">お知らせ・リリース</a></div>
+            </div>
+            <div class="guides">
+                <h4>Guides</h4>
+                <div><a href="https://zenn.dev/zenn">使い方</a></div>
+                <div><a href="https://zenn.dev/publications">Publication</a></div>
+                <div><a href="https://zenn.dev/faq">よくある質問</a></div>
+            </div>
+            <div class="links">
+                <h4>Links</h4>
+                <div><a href="https://twitter.com/zenn_dev">Twitter</a></div>
+                <div><a href="https://github.com/zenn-dev">GitHub</a></div>
+                <div><a href="https://zenn.dev/mediakit">メディアキット</a></div>
+            </div>
+            <div class="legal">
+                <h4>Legal</h4>
+                <div><a href="https://twitter.com/zenn_dev">利用規約</a></div>
+                <div><a href="https://github.com/zenn-dev">プライバシーポリシー</a></div>
+                <div><a href="https://zenn.dev/mediakit">特商法表記</a></div>
+            </div>
+        </div>
+        <div class="final-line">
+            <hr size="0.2px" color="#E9F1F6" width="100%" >
+            <span>a</span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
