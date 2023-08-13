@@ -13,7 +13,10 @@ shots.each_with_index do |y, i|
   x = par[i].to_i
   y = y.to_i
   point = y - x
-  (results.push('ホールインワン'); next) if y == 1 && x != 5
+  if y == 1 && x != 5
+    results.push('ホールインワン')
+    next
+  end
   results.push("#{point}ボギー") if point > 1
   results.push(SCORES[point]) if point < 2
 end
