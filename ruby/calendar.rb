@@ -32,7 +32,7 @@ end
 month = ARGV[1].to_i.zero? ? now_month : ARGV[1].to_i # 引数なしのときの対応
 
 # カレンダー作成
-cal = Array.new(6) { Array.new(7) } 
+cal = Array.new(6) { Array.new(7) }
 end_of_month = Date.new(Date.today.year, month, -1).day
 date = Date.new(Date.today.year, month, 1)
 week_num = 0
